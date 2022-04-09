@@ -58,8 +58,8 @@ nhiệm vụ của chúng ta chỉ cần pass qua được câu lệnh test eax,
    0x00005555555551d7 <+78>:	jne    0x5555555551f6 <main+109>
 ```
 
-và chúng ta sẽ xử lý cái test eax,eax bằng cách sét cho eax=0
-và đây là các bước mk lm với các câu lệnh ni, info, set
+và chúng ta sẽ xử lý cái test eax,eax bằng cách xét cho rax=0, trong ảnh giá trị của rax là 32 
+và đây là các bước mk lm với các câu lệnh ni<chạy chương trình step-by-step>, info<xem giá trị của các thanh ghi>, set<xét giá trị cho các thanh ghi>
 
 ![](images/run1.png)
 
