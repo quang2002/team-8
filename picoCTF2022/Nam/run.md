@@ -2,6 +2,8 @@
 
 Đây là 1 bài tập tìm flag trong file thực thi flag. Bài này bn có thể dùng IDA, Ghidra để decompile code và phân tích tĩnh, từ đó get được flag. Tuy nhiên cách này chỉ để get được flag ko bị mã hóa. còn các flag bị mã hóa trong 1 file khác thì khá là khó khăn khi phân tích tĩnh. Hôm nay mk sẽ nói rõ hơn về kĩ thuật sử dụng gdb để debugger động.
 
+Cách tư duy khi động đến những dạng bài như này là ta sẽ hình dung sơ đồ của program bằng cách gói các khối lệnh assembly lại thành các block và cố gắng kiểm soát luồng thực thi của chương trình bằng cách set các giá trị của thanh ghi.
+
 ![](images/run0.png)
 
 ở đây tôi bắt đầu với việc sử dụng câu lệnh gdb ./run để khơi động debugger với gdb 
