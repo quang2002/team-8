@@ -32,7 +32,7 @@
   
   
   level_1_pw_check()
- ```Python
+ ```
  
  Ta có thể dễ dàng thấy hàm str_xor nhận 2 tham só secret và key và trả về là kết quả của việc decode file  flag.txt.enc cho ra cờ. Hàm này cơ chế hoạt động của nó tương tự caesa cipher. Và ta không cần quan tâm lắm đến nó vì nó chỉ có nhiệm vụ decode file flag.txt.enc. Tiếp đến ta sẽ xem xét đến hàm level_1_pw_check(). Dễ dàng nhận thấy hàm này cho người dùng nhập vào 1 xâu kí tự và so sánh nó. Nếu khớp thì sẽ gọi đến hàm str_xor truyền vào file mã hóa flag và key. dễ dàng nhận ra được password khi ghép các xâu con lại với nhau  
 
